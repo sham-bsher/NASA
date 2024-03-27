@@ -1,0 +1,698 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(10, 10, 10);
+    opacity: 0.7;
+    position: relative;
+    z-index: 100;
+   position: fixed;
+
+}
+
+.header ul{ 
+    list-style: none;
+    
+}
+
+.header ul li{
+    padding-top: 10px;
+    font-size: 20px;
+    font-family:cursive;
+    float: right;
+    margin-right: 20px;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color:azure;
+    transition: 0.5s;
+    
+}
+.header ul li a:hover{
+    color: rgb(89, 88, 88);
+
+}
+
+.himg{
+    position:absolute;
+}
+/* -----------------------header----------------------------- */
+.first{
+    background-image: url(../img/ll.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+.first-h2{
+    color: rgb(252, 255, 255);
+    font-size: 80;
+    font-family: serif;
+    text-align: center;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 250px;
+}
+.first-p{
+    color: rgb(255, 255, 255);
+    font-size: 60;
+    font-family:serif;
+    text-align: center;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 250px;
+}
+.first-p2{
+    color: rgb(253, 255, 255);
+    font-size: 60;
+    font-family:serif;
+    text-align: center;
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 250px;
+}
+.btnf{
+    width: 250;
+    height: 50px;
+    margin: auto;
+    position: absolute;
+    margin-top: 400px;  
+    margin-left: 250px;
+    font-size: 17px;
+}
+.btn-first{
+    width: 100px;
+    height: 60px;
+    border-radius: 20px;
+    transition: 0.5s;
+    font-size: 17px;
+}
+.btn1{
+   
+    color: rgb(6, 6, 6);
+    background-color: rgb(252, 252, 252);
+    
+    
+}
+.btn2{
+ 
+    color:rgb(7, 7, 7);
+    background-color: aliceblue;
+    margin-left: 30px;
+}
+.btn-first:hover{
+    background-color:rgb(104, 104, 132); 
+}
+/* -----------------------------first page-------------------------- */
+.welcome{ 
+    background-image: url(../img/mml.jpg);
+    width: 100%;
+    height: 500px;
+    
+}
+
+.welcome-h2{
+    width: 50%;
+    margin-left: 400px;
+    text-decoration: underline;
+    font-size: 45px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(182, 205, 231);
+}
+.continer-welcome{
+    width: 80%;
+    margin: auto;
+   
+  
+} 
+ .welcome-div{
+    margin-top:20px;
+    overflow: auto;
+    
+    position: relative;
+   
+    
+}
+.welcome-div1{ 
+      height: 385;
+    text-align: center;
+    float: left;
+    width: 30%;
+    background-color: rgb(129, 124, 124);
+    position: relative;
+    
+}
+.welcome-div2{
+    text-align: center;
+    float: left;
+    width: 30%;
+    height: 385;
+    background-color: rgb(10, 10, 10);
+    margin: 0% 5%;
+    position: relative;
+}
+.welcome-info{
+    width: 100%;
+    height: 385; 
+    position: absolute;
+    color: white;
+    font-size: 22PX;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(0, 0, 0, 0.7);
+    top:0px;
+    left:0px;
+    opacity: 0;
+    visibility:hidden;
+    transition: 0.5s;
+   
+}
+.welcome-div .welcome-div1:hover .welcome-info {
+    opacity: 1;
+   visibility:visible;
+
+}
+.welcome-div .welcome-div2:hover .welcome-info {
+    opacity: 1;
+   visibility:visible;
+
+}
+.welcome-info::after{
+    
+    position: absolute;
+    content: "";
+
+    bottom: 0;
+    right: 0;
+
+    height: 0;
+    width: 0;
+
+    background-color: rgb(51, 51, 80);
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.welcome-info:hover::after{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    opacity: 0.6;
+    
+}
+
+
+.welcome-info a{
+    color: rgb(116, 121, 208);
+}
+.welcome-a:hover{
+    color: rgb(35, 38, 99);
+}
+.welcome-info-h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: rgb(126, 134, 247);
+}
+/* ---------------------------- welcome page-------------------------- */
+        
+  .planets{
+    background-image: url(../img/mml.jpg);
+    width: 100%;
+    height: 640px;
+    position: relative;
+  }
+  .continer-planets{
+    width: 84%;
+    margin: auto;
+   
+    
+  }
+  .planets-h2{
+    width: 50%;
+    margin: auto;
+    margin-left: 400;
+    text-decoration: underline;
+    font-size: 45px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(182, 205, 231);
+  }
+ .planets-div{
+    margin-top:20px;
+    overflow: auto;
+    margin-left:10px ;
+    position: relative;
+   
+ }
+.planets-div1{
+    width: 10%;
+    float: left;
+    margin: 21px;
+    width: 200px;
+    position: relative;
+    margin-left: 50px;
+  }
+ .planets-img img{
+    width: 250px;
+    border-radius: 50%;
+    background-size: cover;
+  }
+  .planetes-info {  
+    width: 250px;
+    height: 200;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    top:0px;
+    left:0px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.7s;
+
+}
+.planetes-info h2{
+  margin-top: 20 ;
+  margin-left: 80;
+  color: aliceblue;
+  
+}
+.planetes-info-p{
+  margin-top: 10 ;
+  margin-left: 60;
+  color: aliceblue;
+  font-size: 18px;
+}
+.planets-div1:hover .planetes-info{
+  visibility: visible;
+  opacity: 1;
+  
+  
+}
+/* ---------------------------- welcome plant-------------------------- */
+.us{
+  width: 100%;
+  background-image: url(../img/mml.jpg) ;
+  position: relative;
+  height: 720px;
+}
+.h2-us{
+    width: 300px;
+    
+ font-size: 35px;
+  font-family:cursive;
+  color: rgb(147, 198, 243);
+  padding-top: 70px;
+} 
+.p-us{
+  width: 50%;
+  height: 700px;
+  font-size: 20px;
+  font-family:'Courier New', Courier, monospace;
+  color: aliceblue;
+  float: left;
+}
+.img-us{ 
+  width: 400px;
+  /* height: 200px; */
+  float:right;
+  margin-right: 170px;
+}
+
+.line-us{
+    margin-left: 150px;
+    margin-right: 190px;
+    float:right;
+    /* position: absolute; */
+    
+}
+.line-us1{ 
+    margin-top: 30px;
+    float: left;
+    width: 25px;
+    height: 6px; 
+    background-color: rgb(255, 255, 255);
+    margin-left:50px ; 
+    transition: 0.5s;
+
+}
+.h2-us:hover{
+    color: aliceblue;
+}
+
+.line-us1:hover{
+    background-color: red;
+}
+
+/* -----------------------award------------------ */
+
+.award{
+    width: 100%;
+    height:300px ;
+    position: relative;
+    background-image: url(../img/d6dc4f83-4906-4b52-9d6c-fa4826a8ea8e_16x9_1200x676.webp);
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.award-contant{
+    position: absolute;
+}
+.award-overlay{
+    width: 100%;
+    height:100%;
+    position: absolute;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+.icons{
+    font-size: 29px;
+    height: 200px;
+    text-align: center;
+    color: azure;
+    float: left;
+    margin-left: 160px;
+    margin-top: 100px;
+}
+/* -----------------------groub------------------ */
+.groub{
+    width:100%;
+    height: 753px;
+    position: relative;
+    background-image: url(../img/mml.jpg);
+}
+
+.groub-img1{
+    position: relative;
+}
+
+.groub-img1::after{
+    position: absolute;
+    content: "";
+
+    right: 0;
+    
+    height: 100%;
+    width: 0%;
+
+    opacity: 0;
+    transition: 0.5s;
+    background-image: url(../img/gro22.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: -200px;
+}
+
+.groub-img1:hover::after{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+
+}
+
+.groub-img2{
+    position: relative;
+}
+
+.groub-img2::after{
+    position: absolute;
+    content: "";
+
+    right: 0;
+    
+    height: 100%;
+    width: 0%;
+
+    opacity: 0;
+    transition: 0.5s;
+    background-image: url(../img/gro33.webp);
+    background-size: cover;
+    background-position: center;
+    margin-top: -200px;
+}
+
+.groub-img2:hover::after{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+
+}
+.groub-img3{
+    position: relative;
+}
+
+.groub-img3::after{
+    position: absolute;
+    content: "";
+
+    right: 0;
+    
+    height: 100%;
+    width: 0%;
+
+    opacity: 0;
+    transition: 0.5s;
+    background-image: url(../img/9999.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: -200px;
+}
+
+.groub-img3:hover::after{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+
+}
+
+.groub-h2{
+    width: 50%;
+    margin: auto;
+    margin-left: 620;
+    padding-top: 50px;
+    text-decoration: underline;
+    font-size: 45px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(182, 205, 231);
+}
+.div1_groub{
+    background-color: rgb(204, 204, 204);
+    width: 30%;
+    height: 600px;
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+.groub-info{
+    text-align: center;
+
+}
+.p-groub{
+    font-size: 22px;
+}
+
+/* -------------------------------------trips--------------------- */
+.trips{
+    width: 100%;
+    height: 370px;
+    position: relative;
+    background-image: url(../img/wewewew.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.trips-contant{
+    position: absolute;
+}
+.award-overlay{
+    width: 100%;
+    height:100%;
+    position: absolute;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+.trips-h2{
+    width: 100px;
+    height: 60px;
+    text-decoration: underline;
+    font-size: 45px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+    color: aliceblue;
+    margin-left: 700px;
+}
+.PHOTO{
+    float: left;
+    
+}
+.ph1{
+    border-radius: 50%; 
+    margin-left:200px;
+    margin-top: 10px;
+    
+}
+.p-ph{
+    margin-left: 290px;
+    font-size: 22px;
+    font-family:fantasy;
+   color: aliceblue;
+}
+/* -------------------------------------trips--------------------- */
+
+.news{
+     background-image:url(../img/mml.jpg); 
+     width: 100%;
+     height: 900px;
+    position: relative;
+    
+}
+
+.news-h2{ 
+    height: 0px;
+    width: 80px;
+    color: aliceblue;
+    font-size: 42px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 700px;
+    text-decoration: underline;
+    
+}
+.news-contant{
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    margin-top:40px;
+    margin-left:250px;
+   border-radius: 5px;
+}
+.div1-news{
+    position: relative;
+    width: 900px;
+    height: 30%;
+    margin-top: 15px;
+    border-top-left-radius:100px;
+    border-bottom-right-radius: 100px;
+    background-color: rgb(221, 221, 236);
+    
+}
+.img-news img{
+    margin-top: 20px;
+    margin-left: 20px;
+    position: absolute;
+    border-radius: 50%;
+}
+.info-news{
+ 
+    
+    margin-top: 10px;
+    margin-left: 250px;
+}
+.news-p{
+   
+    color: rgb(14, 14, 14);
+    font-size: 20px;
+}
+
+.div1-news::after{
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    left: 50%;
+    bottom: 0;
+
+    background-color: gray;
+    opacity: 0;
+    transition: 0.5s;
+}
+ 
+.div1-news:hover::after{
+    width: 50%;
+    height: 100%;
+    border-bottom-right-radius: 100px;
+    opacity: 0.5;
+}
+
+.div1-news::before{
+ position: absolute;
+ content: "";
+ width: 0;
+ height: 0;
+ bottom: 0;
+ right: 50%;
+background-color: gray;
+opacity: 0;
+transition: 0.5s;
+
+}
+.div1-news:hover::before{
+    opacity: 0.5;
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 100px;
+} 
+/* -------------------------------------------news----------------------------------- */
+
+footer{
+    width: 100%;
+    height: 300px;
+    /* background-color: rgb(0, 0, 0); */
+    background-image: url(../img/mml.jpg);
+    /* background-size: cover; */
+    background-position: center;
+    position: relative;
+}
+
+.footer-contant{
+   position: absolute;
+   margin-top: 60px;
+   margin-left: 100px;
+}
+
+footer img{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    right: 0;
+    /* margin-top: 60px; */
+    margin-right: 200px;
+}
+
+.footer-account{
+    width: 350px;
+    height: 50px;
+    color: white;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    margin-left: 60px;
+    padding-top: 10px;
+    border: 3px gray solid;
+    border-radius: 30px;
+
+}
+
+.footer-contant i{
+    height: 10px;
+    font-size: 40px;
+    margin-left: 20px;
+    border: 10px solid white;
+    border-radius: 50%;
+    color: white;
+    transition: 0.5s;
+}
+
+.footer-contant p{
+    padding-top: 30px;
+    color: white;
+}
+
+.footer-contant i:hover{
+    opacity: 0.6;
+}
